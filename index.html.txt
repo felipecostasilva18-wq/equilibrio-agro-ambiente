@@ -3,159 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equilíbrio Agro Forte</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            color: #333;
-            line-height: 1.6;
-            background-color: #f4f7f4;
-        }
-
-        header {
-            background-color: #1b4d3e;
-            color: white;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #85e3b3;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #85e3b3;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
-            height: 60vh;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-        }
-
-        .content {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 5px solid #2e7d32;
-        }
-
-        .card h3 {
-            color: #2e7d32;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #1b4d3e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Projeto Agrinho - Equilíbrio Agro-Ambiente</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="nav-container">
-            <div class="logo">🌿 AgroForte</div>
+        <div class="container">
+            <h1>Agrinho <span>2026</span></h1>
             <nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#pilares">Pilares</a>
-                <a href="#contato">Contato</a>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">O Tema</a></li>
+                    <li><a href="#praticas">Práticas Sustentáveis</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Equilíbrio Agro Forte</h1>
-        <p>Unindo a força da produção agrícola com a responsabilidade da preservação ambiental. O futuro do campo é sustentável.</p>
+    <section id="inicio" class="banner">
+        <div class="banner-text">
+            <h2>Equilíbrio Agro-Ambiente</h2>
+            <p>Cultivando o futuro com respeito à natureza e inovação no campo.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
     </section>
 
-    <main class="content">
-        <section id="sobre">
-            <h2>O Conceito do Equilíbrio</h2>
-            <p>O movimento <strong>Equilíbrio Agro Forte</strong> nasce da necessidade de mostrar que produtividade e conservação caminham juntas. Através de práticas inovadoras, tecnologia de ponta e respeito à terra, garantimos a segurança alimentar do planeta enquanto protegemos nossos recursos naturais.</p>
-        </section>
+    <section id="sobre" class="conteudo">
+        <div class="container">
+            <h2>O que é o Equilíbrio Agro-Ambiente?</h2>
+            <hr>
+            <p>O equilíbrio entre a agricultura e o meio ambiente é o maior desafio e a maior oportunidade para o futuro do nosso planeta. Produzir alimentos de forma sustentável significa garantir o sustento das famílias e a segurança alimentar, sem esgotar os recursos naturais como a água, o solo e a biodiversidade.</p>
+            <blockquote>
+                "A terra não é uma herança de nossos pais, mas um empréstimo de nossos filhos."
+            </blockquote>
+        </div>
+    </section>
 
-        <section id="pilares" style="margin-top: 50px;">
-            <h2>Nossos Pilares</h2>
-            <div class="features">
+    <section id="praticas" class="cards-section">
+        <div class="container">
+            <h2>Pilares da Sustentabilidade no Campo</h2>
+            <div class="cards-container">
                 <div class="card">
-                    <h3>Alta Produtividade</h3>
-                    <p>Uso de biotecnologia e agricultura de precisão para produzir mais em menos espaço, otimizando o uso do solo.</p>
+                    <h3>Preservação do Solo</h3>
+                    <p>Uso de técnicas como o plantio direto e a rotação de culturas para evitar a erosão e manter os nutrientes da terra vivos.</p>
                 </div>
                 <div class="card">
-                    <h3>Sustentabilidade</h3>
-                    <p>Práticas como o plantio direto, rotação de culturas e manejo integrado de pragas que preservam a biodiversidade.</p>
+                    <h3>Uso Consciente da Água</h3>
+                    <p>Sistemas de irrigação inteligente, como o gotejamento, e a proteção de nascentes e matas ciliares.</p>
                 </div>
                 <div class="card">
-                    <h3>Tecnologia no Campo</h3>
-                    <p>Monitoramento via satélite e drones para aplicar insumos com exatidão, reduzindo desperdícios e impactos ambientais.</p>
+                    <h3>Tecnologia Verde</h3>
+                    <p>Uso de drones, sensores e defensivos biológicos para reduzir o impacto ambiental e aumentar a eficiência.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer id="contato">
-        <p>&copy; 2026 Equilíbrio Agro Forte - Cultivando um amanhã melhor.</p>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido para o Futuro do Campo.</p>
     </footer>
 
 </body>
